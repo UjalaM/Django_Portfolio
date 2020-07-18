@@ -1,0 +1,109 @@
+{% extends 'contact/base.html' %}
+{% load static %}
+
+{% block stylesheets %}
+<style>
+        
+        .img-container img {
+            border-radius: 50%;
+            margin-bottom: 2rem;
+        }
+
+        .img-container {
+            margin-top: 2rem;
+        }
+
+        .personal {
+            padding: 3rem;
+        }
+
+        .detail {
+            padding: 3rem;
+        }
+        .detail i {
+            margin-right: 1rem;
+            color: #15aabf;
+        }
+
+        b {
+            padding-right: 10px;
+        }
+
+        .card {
+            margin-top: 6rem;
+
+        }
+
+        ul {
+            position: relative;
+            right: 0;
+        }
+
+        .useful_link a {
+            color: #ccc;
+            margin: 1rem;
+        }
+
+        .useful_link a:hover {
+            color: #000;
+        }
+
+        .profile_name h1,
+        h5 {
+            margin: 1rem;
+        }
+    </style>
+    {% endblock stylesheets %}
+    
+    
+    {% block headscript %}
+    {% endblock headscript %}
+
+
+{% block content %}
+
+
+    <div class="container">
+        <div class="col-sm-12">
+            <div class="card shadow-lg p-3 mb-5 bg-white rounded">
+                <div class="row ">
+                    <div class="img-container mx-auto">
+                        <img src="{% static 'contact/images/profile.png' %}">
+                    </div>
+
+                </div>
+                <div class="row align-self-center">
+                    <div class="profile_name text-center">
+                        <h1>UJALA MAURYA</h1>
+                        <h5>I am a Web developer along with skills of Data Science and Machine Learning.</h5>
+                        <div class="useful_link ml-auto">
+                            <center>
+                                <a href="https://github.com/UjalaM"><span class="fab fa-github fa-2x"></span></a>
+                                <a href="#"><span class="fab fa-linkedin fa-2x"></span></a>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6 personal">
+                            <h3 style="font-weight: bold">Personal Details</h3>
+                            <p>Hello guys, my name is Ujala MAURYA. I am Student of Computer Engineering at SFIT. </p>
+                        </div>
+                        <div class="col-md-6 detail">
+                            <p><i class="far fa-user-circle"></i><b>Name:</b> UJALA MAURYA</p>
+                            <p><i class="fas fa-phone"></i><b>Phone:</b> xxxxxxxxxx</p>
+                            <p><i class="fas fa-envelope"></i><b>Email:</b> eamil_id@email.com</p>
+                            <p><i class="far fa-calendar-alt"></i><b>DOB:</b> dd-mm-yyyy</p>
+                            <p><i class="fas fa-map-marker-alt"></i><b>Address:</b>Mumbai, Maharashtra.</p>
+                            <p><i class="fas fa-code"></i><b>Language(s):</b>Python, HTML, CSS, Javascript, C, Java</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block script %}
+{% endblock %}
